@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
 import { Award, Users, Lightbulb, TrendingUp, FileText, Heart } from "lucide-react"
+import volunteerHero from "@/public/college-student-leading-workshop-with-engaged-peer.jpg"
 
 export default function ForVolunteersPage() {
   return (
@@ -23,12 +24,7 @@ export default function ForVolunteersPage() {
       <section className="px-4 py-12 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="mx-auto max-w-4xl overflow-hidden rounded-3xl relative aspect-[16/9]">
-            <Image
-              src="/college-student-leading-workshop-with-engaged-peer.jpg"
-              alt="Student leading workshop"
-              fill
-              className="object-cover"
-            />
+            <Image src={volunteerHero} alt="Student leading workshop" fill className="object-cover" />
           </div>
         </div>
       </section>

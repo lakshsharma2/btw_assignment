@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Mail, Instagram, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import skillshareLogo from "@/public/skillshare-logo.png"
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <Image src="/skillshare-logo.png" alt="SkillShare Logo" width={150} height={40} className="h-10 w-auto" />
+              <Image src={skillshareLogo} alt="SkillShare Logo" width={150} height={40} className="h-10 w-auto" />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">

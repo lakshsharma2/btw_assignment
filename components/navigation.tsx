@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
+import skillshareLogo from "@/public/skillshare-logo.png"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +24,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/skillshare-logo.png" alt="SkillShare Logo" width={150} height={40} className="h-10 w-auto" />
+            <Image src={skillshareLogo} alt="SkillShare Logo" width={150} height={40} className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

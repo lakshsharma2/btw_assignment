@@ -3,6 +3,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, Calendar, Heart, Lightbulb, TrendingUp, Award } from "lucide-react"
+import studentsCollaborating from "@/public/diverse-college-students-collaborating-at-workshop.jpg"
+import creativeWorkshop from "@/public/students-doing-creative-activity-with-notebooks-an.jpg"
+import studentsWorkingTogether from "@/public/group-of-students-smiling-and-working-together.jpg"
 
 export default function HomePage() {
   return (
@@ -34,28 +37,13 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
-              <Image
-                src="/diverse-college-students-collaborating-at-workshop.jpg"
-                alt="Students collaborating"
-                fill
-                className="object-cover"
-              />
+              <Image src={studentsCollaborating} alt="Students collaborating" fill className="object-cover" />
             </div>
             <div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
-              <Image
-                src="/students-doing-creative-activity-with-notebooks-an.jpg"
-                alt="Creative workshop activity"
-                fill
-                className="object-cover"
-              />
+              <Image src={creativeWorkshop} alt="Creative workshop activity" fill className="object-cover" />
             </div>
             <div className="relative overflow-hidden rounded-2xl aspect-[4/3] sm:col-span-2 lg:col-span-1">
-              <Image
-                src="/group-of-students-smiling-and-working-together.jpg"
-                alt="Students working together"
-                fill
-                className="object-cover"
-              />
+              <Image src={studentsWorkingTogether} alt="Students working together" fill className="object-cover" />
             </div>
           </div>
         </div>
