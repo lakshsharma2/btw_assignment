@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
   output: 'export',
-  basePath: '/btw_assignment',
+  basePath: isProd ? '/btw_assignment' : '',
+  assetPrefix: isProd ? '/btw_assignment' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
