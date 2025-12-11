@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, Calendar, Heart, Lightbulb, TrendingUp, Award } from "lucide-react"
@@ -33,24 +34,27 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
-              <img
+              <Image
                 src="/diverse-college-students-collaborating-at-workshop.jpg"
                 alt="Students collaborating"
-                className="h-full w-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
-              <img
+              <Image
                 src="/students-doing-creative-activity-with-notebooks-an.jpg"
                 alt="Creative workshop activity"
-                className="h-full w-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="relative overflow-hidden rounded-2xl aspect-[4/3] sm:col-span-2 lg:col-span-1">
-              <img
+              <Image
                 src="/group-of-students-smiling-and-working-together.jpg"
                 alt="Students working together"
-                className="h-full w-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
